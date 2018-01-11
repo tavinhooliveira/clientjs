@@ -15,7 +15,7 @@ $.ajax({
 		success: 
 		function(users) {
 		$.each(users, function(i, user){
-			$users.append('<li>Id:'+ user.id +'| id_fb_users:'+ user.id_fb_users +'| name:'+ user.name +'| email:'+ user.email + '| gender:'+ user.gender + '| city:'+ user.city + '| nationality:'+ user.nationality + '| preferencia:'+ user.preference + '| friendsTotalFb:'+ user.friendsTotalFb + '| friendsTotalApp:'+ user.friendsTotalApp + '</li></br>')
+			$users.append('<li>Id:<b class="text-success">'+ user.id +'</b>| name:'+ user.name +'| id_fb_users:'+ user.id_fb_users +'| email:'+ user.email + '| gender:'+ user.gender + '| city:'+ user.city + '| nationality:'+ user.nationality + '| preferencia:'+ user.preference + '| friendsTotalFb:'+ user.friendsTotalFb + '| friendsTotalApp:'+ user.friendsTotalApp + '| createData:'+ user.createData + '| updateData:'+ user.updateData + '</li></br>')
 		});
 	  }
 	});
